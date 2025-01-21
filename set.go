@@ -20,3 +20,7 @@ func (s *Set[T]) Contains(v T) bool {
 	_, exists := s.items[v]
 	return exists
 }
+
+func (s *Set[T]) Len() int {
+	return len(s.items)
+}
